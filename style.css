@@ -1,7 +1,14 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  /* background-color: rgb(172, 172, 172); */
 }
 
 textarea {
@@ -11,11 +18,24 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: teal;
+  padding-top: 20px;
 }
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
@@ -33,13 +53,24 @@ textarea {
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
+  border-top: 1px solid royalblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: #aedab4;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 1px solid #000000;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding-top: 30px;
+  font-weight: bolder;
+  font-size: larger;
+  border-left: 1px solid black;
 }
 
 .past {
@@ -65,7 +96,11 @@ textarea {
   color: white;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
+.saveBtn:hover {
+  background-color: #ff6961;
+  transition: 0.2s ease-in-out;
+}
+#currentDay {
+  font-size: 30px;
+  font-weight: bolder;
 }
