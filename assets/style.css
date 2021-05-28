@@ -111,6 +111,10 @@ textarea {
   transition: 0.2s ease;
 }
 
+.footer {
+  height: 100px;
+}
+
 #currentDay {
   font-size: 30px;
   font-weight: bolder;
