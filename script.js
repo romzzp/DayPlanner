@@ -1,3 +1,4 @@
+//created two empty variables where the date and the time will be store using moment.js and to make it a dynamic time setinterval is used.
 var datetime = null,
     date = null;
 
@@ -11,8 +12,7 @@ $(document).ready(function () {
     update();
     setInterval(update, 1000);
 });
-
-// $(document).ready(function () {
+// declaring the moment as time variable for the function to color coded time slots, so if the times is present then color for that time slot will be .present from .css and so on.
 var time = moment();
 
 function dayScheduler() {
@@ -31,7 +31,7 @@ function dayScheduler() {
     })
 }
 dayScheduler();
-
+// this function recalls the work from the localstorage even if the page is refreshed 
 function saveWork() {
     $(".timeSlot").each(function () {
         var id = $(this).attr("id");
@@ -42,14 +42,14 @@ function saveWork() {
     });
 }
 saveWork();
-
+// this function is used for the savebtn, when the savebtn is clicked, it will grab the (id) as time and string of the (work) and save it to the local storage
 var saveBtn = $(".saveBtn");
 saveBtn.on("click", function () {
     var time = $(this).parent().attr("id");
     var work = $(this).siblings(".work").val();
     localStorage.setItem(time, work);
 });
-
+// this function is used for clearbtn if the clear button is clicked then the local storage will be cleared.
 var clearBtn = $(".clearBtn");
 clearBtn.on("click", function () {
     localStorage.clear();

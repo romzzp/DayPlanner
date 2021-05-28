@@ -20,52 +20,57 @@
     <p id="currentDay" class="lead"></p>
   </header>
   <div class="container">
+    <!-- created a division that acts as a row. in that div, there is a div that contains the hour info, textarea where the task will go and at the end there is a button to save the content in the local storage -->
+    <!-- Each row is divided into the columns as 2 - 8 - 2 which make the total of 12 -->
+    <!-- each division is given id that from 9 - 17 which also represent the time in 24 Hrs format -->
+    <!-- also added the button lock icon <fa fa-lock> since we were already using fontawesome .css -->
     <div class="row timeSlot" id="9">
       <div class="col-2 hour">9:00 Hrs</div>
-      <textarea class="col-8 work" placeholder="Your Task For The Day"></textarea>
+      <textarea class="col-8 work" placeholder="Enter Your Task"></textarea>
       <button class="col-2 saveBtn fa fa-lock"></button>
     </div>
     <div class="row timeSlot" id="10">
       <div class="col-2 hour">10:00 Hrs</div>
-      <textarea class="col-8 work" placeholder="Your Task For The Day"></textarea>
+      <textarea class="col-8 work" placeholder="Enter Your Task"></textarea>
       <button class="col-2 saveBtn fa fa-lock"></button>
     </div>
     <div class="row timeSlot" id="11">
       <div class="col-2 hour">11:00 Hrs</div>
-      <textarea class="col-8 work" placeholder="Your Task For The Day"></textarea>
+      <textarea class="col-8 work" placeholder="Enter Your Task"></textarea>
       <button class="col-2 saveBtn fa fa-lock"></button>
     </div>
     <div class="row timeSlot" id="12">
       <div class="col-2 hour">12:00 Hrs</div>
-      <textarea class="col-8 work" placeholder="Your Task For The Day"></textarea>
+      <textarea class="col-8 work" placeholder="Enter Your Task"></textarea>
       <button class="col-2 saveBtn fa fa-lock"></button>
     </div>
     <div class="row timeSlot" id="13">
       <div class="col-2 hour">13:00 Hrs</div>
-      <textarea class="col-8 work" placeholder="Your Task For The Day"></textarea>
+      <textarea class="col-8 work" placeholder="Enter Your Task"></textarea>
       <button class="col-2 saveBtn fa fa-lock"></button>
     </div>
     <div class="row timeSlot" id="14">
       <div class="col-2 hour">14:00 Hrs</div>
-      <textarea class="col-8 work" placeholder="Your Task For The Day"></textarea>
+      <textarea class="col-8 work" placeholder="Enter Your Task"></textarea>
       <button class="col-2 saveBtn fa fa-lock"></button>
     </div>
     <div class="row timeSlot" id="15">
       <div class="col-2 hour">15:00 Hrs</div>
-      <textarea class="col-8 work" placeholder="Your Task For The Day"></textarea>
+      <textarea class="col-8 work" placeholder="Enter Your Task"></textarea>
       <button class="col-2 saveBtn fa fa-lock"></button>
     </div>
     <div class="row timeSlot" id="16">
       <div class="col-2 hour">16:00 Hrs</div>
-      <textarea class="col-8 work" placeholder="Your Task For The Day"></textarea>
+      <textarea class="col-8 work" placeholder="Enter Your Task"></textarea>
       <button class="col-2 saveBtn fa fa-lock"></button>
     </div>
     <div class="row timeSlot" id="17">
       <div class="col-2 hour">17:00 Hrs</div>
-      <textarea class="col-8 work" placeholder="Your Task For The Day"></textarea>
+      <textarea class="col-8 work" placeholder="Enter Your Task"></textarea>
       <button class="col-2 saveBtn fa fa-lock"></button>
     </div>
     <div class="row">
+      <!-- created an extra row that only has a button which is used to clear the local storage -->
       <button class="col-12 clearBtn">Clear All</button>
     </div>
   </div>
